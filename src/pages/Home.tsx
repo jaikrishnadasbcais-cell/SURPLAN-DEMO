@@ -9,6 +9,8 @@ import { services } from '../data/services';
 import { projects } from '../data/projects';
 import { industries } from '../data/industries';
 import InteractiveQuoteCalculator from '../components/InteractiveQuoteCalculator';
+import heroProjectImage from '../assets/images/surplan_hero_project_1783524905114.jpg';
+import fieldSurveyImage from '../assets/images/surplan_field_survey_1783524922330.jpg';
 
 export default function Home() {
   const [activeProjectIndex, setActiveProjectIndex] = useState(0);
@@ -48,7 +50,7 @@ export default function Home() {
         {/* Full-width custom-generated image background with subtle dark overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/surplan_hero_project_1783524905114.jpg"
+            src={heroProjectImage}
             alt="Surplan Civil Engineering Survey South Africa"
             className="w-full h-full object-cover object-center opacity-30"
             referrerPolicy="no-referrer"
@@ -122,7 +124,7 @@ export default function Home() {
             <div className="lg:col-span-5 relative">
               <div className="relative z-10 rounded-none overflow-hidden shadow-xl border border-gray-200">
                 <img
-                  src="/src/assets/images/surplan_field_survey_1783524922330.jpg"
+                  src={fieldSurveyImage}
                   alt="Surplan Land Surveyor in safety vest"
                   className="w-full h-[450px] object-cover"
                   referrerPolicy="no-referrer"

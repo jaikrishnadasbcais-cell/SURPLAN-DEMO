@@ -4,6 +4,8 @@
  */
 
 import { Project } from '../types';
+import heroProjectImage from '../assets/images/surplan_hero_project_1783524905114.jpg';
+import uavMappingImage from '../assets/images/surplan_uav_mapping_1783524940451.jpg';
 
 export const projects: Project[] = [
   {
@@ -23,7 +25,7 @@ export const projects: Project[] = [
       'Deformation Monitoring Software'
     ],
     images: [
-      '/src/assets/images/surplan_hero_project_1783524905114.jpg',
+      heroProjectImage,
       'https://picsum.photos/seed/cape-harbour-asbuilt/800/600',
       'https://picsum.photos/seed/cape-harbour-control/800/600'
     ],
@@ -70,7 +72,7 @@ export const projects: Project[] = [
       'Surpac Volumetric Modelling'
     ],
     images: [
-      '/src/assets/images/surplan_uav_mapping_1783524940451.jpg',
+      uavMappingImage,
       'https://picsum.photos/seed/mine-pit-aerial/800/600',
       'https://picsum.photos/seed/mine-stockpile-cloud/800/600'
     ],

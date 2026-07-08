@@ -4,6 +4,8 @@
  */
 
 import { Service } from '../types';
+import fieldSurveyImage from '../assets/images/surplan_field_survey_1783524922330.jpg';
+import uavMappingImage from '../assets/images/surplan_uav_mapping_1783524940451.jpg';
 
 export const services: Service[] = [
   {
@@ -30,7 +32,7 @@ export const services: Service[] = [
       'Detailed field data acquisition using high-precision total stations',
       'Data processing, quality auditing, and delivery of final digital models (DWG, DXF, LandXML)'
     ],
-    image: '/src/assets/images/surplan_field_survey_1783524922330.jpg',
+    image: fieldSurveyImage,
     iconName: 'Compass'
   },
   {
@@ -165,7 +167,7 @@ export const services: Service[] = [
       'Autonomous flight execution with high-overlap camera sensors',
       'Photogrammetric processing, point-cloud classification, and elevation file generation'
     ],
-    image: '/src/assets/images/surplan_uav_mapping_1783524940451.jpg',
+    image: uavMappingImage,
     iconName: 'Plane'
   },
   {
