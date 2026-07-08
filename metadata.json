@@ -1,0 +1,6 @@
+{
+  "name": "Surplan",
+  "description": "Premium concept for a leading South African surveying and geomatics consultancy, showcasing engineering, cadastral, and UAV solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
