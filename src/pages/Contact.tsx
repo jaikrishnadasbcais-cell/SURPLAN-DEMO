@@ -140,7 +140,7 @@ export default function Contact() {
                   Enquiry Submission Portal
                 </h3>
                 <p className="text-gray-500 text-xs">
-                  Fill out the fields below. Annatjie Botha will route your message to the managing surveyor of the respective regional hub.
+                  Fill out the fields below. Annatjie Botha will route your message to the relevant managing surveyor on our team.
                 </p>
               </div>
 

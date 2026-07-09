@@ -108,8 +108,8 @@ export default function Home() {
               <p className="text-[10px] font-bold text-editorial-slate uppercase tracking-widest">National Projects</p>
             </div>
             <div className="space-y-1">
-              <p className="text-4xl sm:text-5xl font-bold text-editorial-navy font-display">3 Hubs</p>
-              <p className="text-[10px] font-bold text-editorial-slate uppercase tracking-widest">Regional Corporate Offices</p>
+              <p className="text-4xl sm:text-5xl font-bold text-editorial-navy font-display">9</p>
+              <p className="text-[10px] font-bold text-editorial-slate uppercase tracking-widest">Provinces Serviced Nationwide</p>
             </div>
           </div>
         </div>
