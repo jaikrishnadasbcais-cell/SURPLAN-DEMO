@@ -61,7 +61,7 @@ export const team: TeamMember[] = [
     name: 'Annatjie Botha',
     role: 'Operations & Surveyor-General Lodgement Manager',
     qualifications: 'Dip Project Management (Damelin)',
-    bio: 'Annatjie acts as the central coordinator for our physical offices. She coordinates client quotations, schedules site crews, and acts as our direct liaison with the Surveyor-General offices in Cape Town, Pretoria, and Pietermaritzburg.',
+    bio: 'Annatjie acts as the central coordinator for our physical office. She coordinates client quotations, schedules site crews, and acts as our direct liaison with the Surveyor-General offices in Cape Town, Pretoria, and Pietermaritzburg.',
     email: 'annatjie@surplan.co.za',
     image: 'https://picsum.photos/seed/annatjie-surplan/400/400'
   }

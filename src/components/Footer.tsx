@@ -77,10 +77,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Contact & Regional Offices */}
+          {/* Column 3: Contact & Office */}
           <div className="lg:col-span-4 space-y-4">
             <h4 className="text-xs font-bold text-white uppercase tracking-widest border-b border-slate-800 pb-2">
-              Regional Offices
+              Our Office
             </h4>
             <div className="space-y-4 text-xs">
               {offices.map((off) => (

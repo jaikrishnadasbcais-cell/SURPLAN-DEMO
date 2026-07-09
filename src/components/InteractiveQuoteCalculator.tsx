@@ -20,7 +20,7 @@ export default function InteractiveQuoteCalculator() {
   const [selectedService, setSelectedService] = useState(services[0].id);
   const [projectSize, setProjectSize] = useState<number>(5); // Default size (e.g. 5 hectares or km or plots)
   const [complexity, setComplexity] = useState<'low' | 'medium' | 'high'>('medium');
-  const [province, setProvince] = useState<string>('Western Cape');
+  const [province, setProvince] = useState<string>('Eastern Cape');
   const [requiresSGAproval, setRequiresSGApproval] = useState<boolean>(false);
   
   // Submission state
@@ -60,9 +60,9 @@ export default function InteractiveQuoteCalculator() {
     const fieldWorkCost = Math.round(baseRatePerUnit * projectSize * scaleFactor * complexityMultiplier);
     const dataProcessingCost = Math.round(baseProcessingRate * (1 + (projectSize * 0.05)) * complexityMultiplier);
     
-    // Travel costs based on distance from regional hubs
+    // Travel costs based on distance from our Port Elizabeth (Gqeberha) HQ
     let travelCost = 1200; // standard close-by
-    if (province !== 'Western Cape' && province !== 'Gauteng' && province !== 'KwaZulu-Natal') {
+    if (province !== 'Eastern Cape') {
       travelCost = 4500; // regional mobilize fee
     }
 
@@ -190,11 +190,11 @@ export default function InteractiveQuoteCalculator() {
                 onChange={(e) => setProvince(e.target.value)}
                 className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all text-sm"
               >
-                <option value="Western Cape">Western Cape (HQ Hub)</option>
-                <option value="Gauteng">Gauteng (HQ Hub)</option>
-                <option value="KwaZulu-Natal">KwaZulu-Natal (HQ Hub)</option>
+                <option value="Eastern Cape">Eastern Cape (HQ Hub)</option>
+                <option value="Western Cape">Western Cape</option>
+                <option value="Gauteng">Gauteng</option>
+                <option value="KwaZulu-Natal">KwaZulu-Natal</option>
                 <option value="Mpumalanga">Mpumalanga</option>
-                <option value="Eastern Cape">Eastern Cape</option>
                 <option value="Limpopo">Limpopo</option>
                 <option value="Free State">Free State</option>
                 <option value="North West">North West</option>

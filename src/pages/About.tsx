@@ -23,7 +23,7 @@ export default function About() {
               Our Legacy, Mission & Commitment to Accuracy
             </h1>
             <p className="text-slate-400 mt-4 text-sm sm:text-base leading-relaxed">
-              Founded in Cape Town in 1988, Surplan has spent over three decades establishing itself as a trusted partner in Southern African civil development and geomatics operations.
+              Founded in Port Elizabeth (Gqeberha) in 1988, Surplan has spent over three decades establishing itself as a trusted partner in Southern African civil development and geomatics operations.
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function About() {
               In 1988, professional land surveyor Johan van der Merwe established Surplan with a single total station and a commitment to helping municipalities navigate early coastal harbour expansions. As South Africa transitioned into a constitutional democracy, massive structural developments required a new class of agile, highly precise geomatics professionals.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              We grew rapidly by investing in revolutionary tech—becoming early adopters of static GPS satellite networks in the 1990s, terrestrial laser scanning in the 2000s, and high-precision survey drones in the 2010s. Today, we manage six divisions staffed with SAGC-registered Land Surveyors, geomatics programmers, and GIS databases experts, operating across three regional hubs in Cape Town, Gauteng, and Durban.
+              We grew rapidly by investing in revolutionary tech—becoming early adopters of static GPS satellite networks in the 1990s, terrestrial laser scanning in the 2000s, and high-precision survey drones in the 2010s. Today, we manage six divisions staffed with SAGC-registered Land Surveyors, geomatics programmers, and GIS databases experts, operating out of our Port Elizabeth (Gqeberha) headquarters and serving clients across South Africa.
             </p>
             <div className="p-4 bg-slate-50 border border-gray-100 rounded-xl flex items-start space-x-3">
               <Award className="h-6 w-6 text-blue-600 shrink-0 mt-0.5" />
@@ -60,7 +60,7 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <img
               src="https://picsum.photos/seed/surplan-history/600/450"
-              alt="Vintage optical theodolite and historic Cape Town harbor"
+              alt="Vintage optical theodolite and historic Port Elizabeth harbor"
               className="rounded-2xl shadow-xl w-full object-cover h-[350px]"
               referrerPolicy="no-referrer"
             />
@@ -248,7 +248,7 @@ export default function About() {
           <div className="bg-slate-50 p-6 rounded-xl border border-gray-100 space-y-3">
             <h4 className="font-bold text-gray-900 text-sm">Practical Internship Weeks</h4>
             <p className="text-xs text-gray-500 leading-relaxed">
-              Every June and December, we host geomatics undergraduates at our Cape Town and Sandton offices, introducing them to high-precision robotic tracking and drone point-cloud registers.
+              Every June and December, we host geomatics undergraduates at our Port Elizabeth office, introducing them to high-precision robotic tracking and drone point-cloud registers.
             </p>
           </div>
           <div className="bg-slate-50 p-6 rounded-xl border border-gray-100 space-y-3">

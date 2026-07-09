@@ -8,8 +8,6 @@ import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Navigation, Compass } fr
 import { offices } from '../data/offices';
 
 export default function Contact() {
-  const [selectedOffice, setSelectedOffice] = useState<string>('Cape Town');
-  
   // Form state
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -24,7 +22,7 @@ export default function Contact() {
     setIsSubmitted(true);
   };
 
-  const activeOffice = offices.find(o => o.name.includes(selectedOffice)) || offices[0];
+  const activeOffice = offices[0];
 
   return (
     <div className="bg-white min-h-screen pb-20">
@@ -50,33 +48,15 @@ export default function Contact() {
       {/* 2. Main Contact Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        {/* Left Side: Office hubs & Geographic SVG map */}
+        {/* Left Side: Office details & Geographic SVG map */}
         <div className="lg:col-span-5 space-y-8">
           <div className="space-y-4">
             <h2 className="text-xl font-bold font-sans text-gray-900 tracking-tight">
-              Our Regional Offices
+              Our Office
             </h2>
             <p className="text-gray-500 text-xs">
-              Select an office to view specific street directions, phone connections, and coordinates.
+              Visit us or reach out using the street directions, phone connections, and coordinates below.
             </p>
-
-            {/* Office switch tabs */}
-            <div className="grid grid-cols-3 gap-2 border-b border-gray-100 pb-2">
-              {['Cape Town', 'Johannesburg', 'Durban'].map((city) => (
-                <button
-                  key={city}
-                  type="button"
-                  onClick={() => setSelectedOffice(city)}
-                  className={`py-2 px-3 text-xs font-bold rounded-lg border text-center transition-all ${
-                    activeOffice.city === city
-                      ? 'bg-blue-600 border-blue-600 text-white shadow-sm'
-                      : 'bg-slate-50 border-gray-100 text-gray-600 hover:bg-gray-100'
-                  }`}
-                >
-                  {city}
-                </button>
-              ))}
-            </div>
           </div>
 
           {/* Office specifications detail */}
@@ -118,40 +98,26 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Interactive Geographic SVG Map */}
+          {/* Geographic SVG Map */}
           <div className="bg-slate-900 rounded-2xl p-6 border border-slate-800 text-center space-y-4">
             <div className="flex justify-between items-center text-xs text-slate-400">
               <span className="font-mono">South African Hub Navigation</span>
-              <span className="font-mono text-blue-400 text-[10px] uppercase">Interactive Geolocation</span>
+              <span className="font-mono text-blue-400 text-[10px] uppercase">Geolocation</span>
             </div>
 
             {/* Simulated Custom Vector Map of South Africa */}
             <div className="relative w-full aspect-[4/3] bg-slate-950 border border-slate-800 rounded-xl overflow-hidden flex items-center justify-center">
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:16px_16px]" />
-              
+
               <svg className="w-full h-full max-h-[220px]" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Simulated South Africa Border Contour */}
                 <path d="M50,150 L100,50 L200,60 L280,30 L350,90 L380,180 L320,240 L220,280 L120,260 L60,200 Z" fill="rgba(37, 99, 235, 0.05)" stroke="rgba(37, 99, 235, 0.2)" strokeWidth="2" strokeDasharray="4 4" />
-                
-                {/* Gauteng Marker */}
-                <g className="cursor-pointer" onClick={() => setSelectedOffice('Johannesburg')}>
-                  <circle cx="260" cy="100" r="12" fill={selectedOffice === 'Johannesburg' ? 'rgba(37, 99, 235, 0.3)' : 'transparent'} className="animate-ping" />
-                  <circle cx="260" cy="100" r="6" fill={selectedOffice === 'Johannesburg' ? '#2563eb' : '#64748b'} />
-                  <text x="272" y="104" fill={selectedOffice === 'Johannesburg' ? '#ffffff' : '#94a3b8'} fontSize="10" fontWeight="bold">Johannesburg Hub</text>
-                </g>
 
-                {/* KwaZulu-Natal Marker */}
-                <g className="cursor-pointer" onClick={() => setSelectedOffice('Durban')}>
-                  <circle cx="310" cy="180" r="12" fill={selectedOffice === 'Durban' ? 'rgba(37, 99, 235, 0.3)' : 'transparent'} className="animate-ping" />
-                  <circle cx="310" cy="180" r="6" fill={selectedOffice === 'Durban' ? '#2563eb' : '#64748b'} />
-                  <text x="322" y="184" fill={selectedOffice === 'Durban' ? '#ffffff' : '#94a3b8'} fontSize="10" fontWeight="bold">Durban Hub</text>
-                </g>
-
-                {/* Western Cape Marker */}
-                <g className="cursor-pointer" onClick={() => setSelectedOffice('Cape Town')}>
-                  <circle cx="110" cy="240" r="12" fill={selectedOffice === 'Cape Town' ? 'rgba(37, 99, 235, 0.3)' : 'transparent'} className="animate-ping" />
-                  <circle cx="110" cy="240" r="6" fill={selectedOffice === 'Cape Town' ? '#2563eb' : '#64748b'} />
-                  <text x="122" y="244" fill={selectedOffice === 'Cape Town' ? '#ffffff' : '#94a3b8'} fontSize="10" fontWeight="bold">Cape Town HQ</text>
+                {/* Eastern Cape Marker (Gqeberha / Port Elizabeth HQ) */}
+                <g>
+                  <circle cx="270" cy="210" r="12" fill="rgba(37, 99, 235, 0.3)" className="animate-ping" />
+                  <circle cx="270" cy="210" r="6" fill="#2563eb" />
+                  <text x="282" y="214" fill="#ffffff" fontSize="10" fontWeight="bold">Gqeberha HQ</text>
                 </g>
               </svg>
 

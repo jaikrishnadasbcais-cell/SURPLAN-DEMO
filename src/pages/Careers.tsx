@@ -27,7 +27,7 @@ export default function Careers() {
     {
       id: 'sr-surveyor',
       title: 'Senior Geomatics Land Surveyor (Pr.L.S.)',
-      location: 'Cape Town Office',
+      location: 'Port Elizabeth Office',
       type: 'Full-time Permanent',
       department: 'Cadastral & Legal Subdivisions',
       description: 'We are seeking a SAGC-registered Professional Land Surveyor to oversee complex commercial subdivisions, township establishment diagrams, and Deeds Office liaison. You will supervise three junior surveyors-in-training.',
@@ -41,7 +41,7 @@ export default function Careers() {
     {
       id: 'uav-pilot',
       title: 'Commercial UAV Pilot & Photogrammetry Specialist',
-      location: 'Durban Office',
+      location: 'Port Elizabeth Office',
       type: 'Full-time Permanent',
       department: 'LiDAR & Aerial Spatial Data',
       description: 'Join our high-tech spatial division executing dense topographical corridor mapping, wind-farm micro-siting, and mining volumetric audits using modern vertical take-off UAV drones.',
@@ -55,7 +55,7 @@ export default function Careers() {
     {
       id: 'gis-analyst',
       title: 'Junior GIS Systems Developer',
-      location: 'Johannesburg Office',
+      location: 'Port Elizabeth Office',
       type: 'Full-time / Trainee Program',
       department: 'GIS & Spatial Databases',
       description: 'We are looking for an analytical GIS systems designer to manage and integrate spatial database registries for our major municipal and utility asset mapping clients.',
